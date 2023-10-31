@@ -7,3 +7,9 @@ function makeGrid(size){
   };   
 };
 makeGrid(16);
+
+
+
+container.addEventListener('mouseover', (event) => {
+    event.target.style.backgroundColor = "black";
+});
