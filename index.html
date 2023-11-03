@@ -11,7 +11,12 @@
             <h1 class="main title">Start drawing below</h1>
         </header>
         <main class="main">
-            <button class="reset">WIPE ME!</button>
+            <div class="action-column">
+              <button class="reset">WIPE ME!</button>
+              <input type="range" min="8" max="100" value="16" onchange="updateGrid()" class="slider" id="my-range">
+              <button class="rainbow">GOD MODE!</button>
+              <button class="classic">PLAIN MODE!</button>
+            </div>
             <div class="container"></div>
         </main>
         <script src="main.js"></script>
