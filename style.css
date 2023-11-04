@@ -1,29 +1,77 @@
 body {
-    background-color: aquamarine;
+    background-color: lightcoral;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    font-family: monospace
 }
 
 header {
     display: flex;
-    padding-bottom: 100px;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+button {
+    border-radius: 20px;
+    border-color: black;
+    box-shadow: 5px 10px black;
+    padding: 10px;
+}
+
+.rainbow {
+    background-image: linear-gradient(to right, blue,green,purple,red,orange,yellow);
+}
+
+.classic {
+    background-color: black;
+    color: white;
+    box-shadow: 5px 10px white;
+}
+
+.action-column {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .container {
-    width: 800px;
-    height: 800px;
-    border: solid;
-    
-    display: inline-grid;
-    grid-template-columns: repeat(16, 2fr);
-    grid-template-rows: repeat(16, 2fr);
-    
+    width: 600px;
+    height: 600px;
+    border: solid;   
+    display: inline-grid;    
 }
 .square {
-    border: 1px solid gray;
-    background-color: white;
+    border: 1px solid black;
+    background-color: white;  
+}
 
-    
+.slider-container {
+    width: 25%;
+    padding-top: 10px;
+}
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 20px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: rgb(34, 33, 32);
+    cursor: pointer;
 }
